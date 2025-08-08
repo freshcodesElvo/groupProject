@@ -1,0 +1,352 @@
+body{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(188, 173, 255);
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      
+
+    }
+}
+.hero{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .heroContent{
+
+        width: 90vw;
+        height: 100%;
+        position: relative;
+        header{
+         
+            position: relative;
+              nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(3, 0, 0, 0.329); /* A semi-transparent white background */
+                backdrop-filter: blur(4px); 
+                border-radius: 1em;
+                position: absolute;
+                top: 1em;
+                height: 4em;
+                width: 100%;
+
+            .logo{
+                margin-left: 4em;
+                svg{
+                    width: 2em;
+                }
+                
+            }
+            ul{
+                display: flex;
+                gap: 2em;
+                  margin-right: 4em;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Montserrat";
+                    }
+                }
+            }
+           
+
+        }
+        }
+    }
+    .heroSection{
+        position: absolute;
+      
+        bottom: 4em;
+        h1{
+            color: white;
+            font-size: 2em;
+            font-family: "Montserrat";
+
+        }
+        h2{
+            color: white;
+             font-family: "Montserrat";
+             font-size: 3em;
+             text-align: left;
+
+        }
+        p{
+            color: white;
+             font-family: "Montserrat";
+             font-size: 1em;
+             span{
+                color: rgb(0, 231, 0);
+                font-size: 1.6em;
+             }
+        }
+
+    }
+   
+
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    filter: brightness(0.2);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
+main{
+    padding-top: 4em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    .club-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+       
+       
+        .chess-club{
+             display: flex;
+             gap: 5em;
+              padding-bottom: 6em;
+            .chess-club-left{
+                  h1{
+                    color: black;
+                    font-family: "montserrat";
+                    font-size: 2em;
+             }
+             p{
+                font-size: 1em;
+                font-family: "montserrat";
+             }
+             button{
+                background: green;
+                padding: 1em 4em;
+                border: 0;
+                color: #fff;
+                border-radius: 1em 0;
+                margin-top: 2em;
+                font-family: "montserrat";
+                font-size: 1em;
+             }
+
+            }
+            img{
+                width: 50em;
+                border-radius: 1em;
+            }
+          
+
+        }
+
+        
+       
+}
+
+}
+.whyJoin{
+     width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 9)), url("/assets/jani-kaasinen-7VGzV09YnvA-unsplash.jpg");
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-size: cover;
+
+    .whyJoin-content{
+        width: 90%;
+    
+    
+        h2{
+            color: white;
+                                    font-family: "montserrat";
+
+        }
+        ul{
+            display: flex;
+            gap: 2em;
+            li{
+                 background: rgba(255, 255, 255, 0.15); /* A semi-transparent white background */
+                    backdrop-filter: blur(4px); 
+                    border-radius: 2em 0;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    padding: 2px 2em 1em 2em;
+                    list-style: none; 
+                    margin: 2em auto; 
+                    max-width: 300px;
+                    color: white;
+                    width: 300px;
+                    cursor: pointer;
+                    h6{
+                        font-family: "montserrat";
+                        font-size: 1.3em;
+                        
+                        
+                    }
+                    p{
+                         font-family: "montserrat";
+                         font-size: 1em; 
+                         margin-top: -20px;
+                    }
+                     &:hover{
+                      
+                      border: 1px solid green;
+                      transform: translateY(-30px);
+                      transition: .4s linear;
+                      background: rgba(0, 77, 100, 0.15);
+
+
+                     
+                
+            }
+                    
+            }
+           
+        }
+    }
+}
+.achivements{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 3em;
+  
+    .achivementsContent{
+        h2{
+            font-family: "montserrat";
+        }
+        p{
+            font-family: "montserrat";
+
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 6em;
+            li{
+              list-style: none;
+              width: 20em;
+                img{
+                    width: 20em;
+                    border-radius: 1em;
+                    
+
+                }
+            }
+        }
+    }
+}
+
+
+.getInvolved{
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4em;
+    .getInvolvedContent{
+        width: 90%;
+        display: flex;
+        padding-top: 4em;
+        gap: 4em;
+        .left{
+            font-family: "montserrat";
+
+            ul{
+                li{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2em;
+                    gap: 10px;
+                    ion-icon{
+                        font-size: 2em;
+                    }
+                
+                }
+            }
+        }
+    }
+    img{
+        border-radius: 1em;
+    }
+}
+.socials{
+    display: flex;
+    gap: 2em;
+}
+.comeChallange{
+    margin-top: 4em;
+}
+
+
+            footer{
+                background-color: green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .footerContent{
+                    width: 90%;
+                    color: white;
+
+                    ul{
+                        display: flex;
+                        gap: 2em;
+                        margin-left: -2em;
+                        li{
+                            list-style: none;
+                            a{
+                                 color: white;
+                                 text-decoration: 0;
+                                 font-family: "montserrat";
+                                 font-size: 1;
+
+                            }
+
+
+
+                        }
+                    }
+                    p{
+                           color: white;
+                                 text-decoration: 0;
+                                 font-family: "montserrat";
+                                 font-size: 1;
+                    }
+                
+                }
+
+            }
