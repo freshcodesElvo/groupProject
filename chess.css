@@ -134,13 +134,20 @@ main{
         justify-content: center;
         align-items: center;
         width: 90%;
-       
+  
        
         .chess-club{
+         
+            
              display: flex;
+           
+             justify-content: center;
+            
              gap: 5em;
               padding-bottom: 6em;
             .chess-club-left{
+                width: 50%;
+                
                   h1{
                     color: black;
                     font-family: "montserrat";
@@ -185,7 +192,7 @@ main{
     background-size: cover;
 
     .whyJoin-content{
-        width: 90%;
+       
     
     
         h2{
@@ -205,7 +212,7 @@ main{
                     padding: 2px 2em 1em 2em;
                     list-style: none; 
                     margin: 2em auto; 
-                    max-width: 300px;
+                    max-width: 250px;
                     color: white;
                     width: 300px;
                     cursor: pointer;

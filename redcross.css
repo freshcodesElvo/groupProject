@@ -1,0 +1,54 @@
+.hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 9)),url("/assets/recrossbanner.jpg");
+
+}
+.club-detail{
+    .redcross-club{
+        font-family: "montserrat";
+        display: flex;
+        padding-bottom: 6em;
+        justify-content: center;
+        gap: 4em;
+        .redcross-club-left{
+            width: 40%;
+                   button{
+                background: green;
+                padding: 1em 4em;
+                border: 0;
+                color: #fff;
+                border-radius: 1em 0;
+                margin-top: 2em;
+                font-family: "montserrat";
+                font-size: 1em;
+             }
+        }
+        img{
+            border-radius: 1em;
+        }
+    }
+}
+.learning-technology-enjoyable{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+    .learning-technology-enjoyable-content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+        .learning-technology-enjoyable-left{
+            font-family: "montserrat";
+            width: 40%;
+        }
+            
+            img{
+                width: 40%;
+                border-radius: 1em;
+            }
+        
+    }
+    
+}

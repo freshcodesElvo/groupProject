@@ -1,5 +1,119 @@
 .hero{
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 9)),url("/assets/guerrillabuzz-xy9pFK9UGbk-unsplash.jpg");
-   
+}
+main{
+        
+      .club-detail{
 
+        width: 100vw;
+        .web3-club{
+                width: auto;
+      
+                display: flex;
+                flex-direction:row-reverse;
+                justify-content: center;
+                padding-bottom: 4em;
+               
+                gap: 6em;
+      
+                .web3-club-left{
+                        font-family: "montserrat";
+                        width: 30%;
+                        h1{
+                                
+                        }
+                        ul{
+                            li{
+                                margin-top: 1em;
+                            }
+                        }
+                        button{
+                                background: green;
+                                padding: 1em 4em;
+                                border: 0;
+                                color: #fff;
+                                border-radius: 1em 0;
+                                margin-top: 2em;
+                                font-family: "montserrat";
+                                font-size: 1em;
+                        }
+                       
+                }
+                img{
+                         width: 40%;
+                         border-radius: 1em;
+                         
+                }
+        }
+      }  
+}
+.learning-technology-enjoyable{
+
+       
+        font-family: "montserrat";
+        display: flex;
+        justify-content: center;
+        gap: 4em;
+        .learning-technology-enjoyable-left{
+        width: 50%;
+        
+        
+        }
+        .learning-technology-enjoyable-right{
+                img{
+                border-radius: 1em;
+        }
+        }
+
+
+}
+.whyJoin{
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 9)), url("/assets/01-BI_WEB3_STACKPOLE_HERO.jpg");
+            height: 70vh;
+            .whyJoin-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: left;
+              
+            }
+
+}
+.achivements{
+
+         width: 100vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+        .achivementsContent{
+              display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+              
+                font-family: "montserrat";
+                text-align: left;
+  
+                ul{
+                        gap: 4em;
+                }
+        }
+}
+.getInvolved{
+       width: 100vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .getInvolvedContent{
+          
+                 display: flex;
+         justify-content: center;
+         align-items: center;
+                img{
+                        width: 40em;
+                }
+
+         } 
 }
