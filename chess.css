@@ -5,6 +5,8 @@ body{
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
+        overflow-x: hidden;
+
     background-color: rgb(188, 173, 255);
     
     header{
@@ -36,16 +38,16 @@ body{
          
             position: relative;
               nav{
-                display: flex;
+               display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background: rgba(3, 0, 0, 0.329); /* A semi-transparent white background */
+                background: rgba(3, 0, 0, 0.849); 
                 backdrop-filter: blur(4px); 
-                border-radius: 1em;
-                position: absolute;
-                top: 1em;
-                height: 4em;
-                width: 100%;
+                border-radius: 100em;
+                position: fixed;
+                top: .2em;
+                height: 5em;
+                width: 92%;
 
             .logo{
                 margin-left: 4em;
@@ -204,7 +206,7 @@ main{
             display: flex;
             gap: 2em;
             li{
-                 background: rgba(255, 255, 255, 0.15); /* A semi-transparent white background */
+                 background: rgba(255, 255, 255, 0.15); 
                     backdrop-filter: blur(4px); 
                     border-radius: 2em 0;
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -318,42 +320,33 @@ main{
     margin-top: 4em;
 }
 
-
-            footer{
-                background-color: green;
+footer {
+                background: #000;
+                text-align: center;
+                padding: 2em;
+                border-top: 1px solid #111;
+            }
+            .footerContent {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .footerContent ul {
+                list-style: none;
+                padding-bottom: 1em;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                width: 100%;
-                .footerContent{
-                    width: 90%;
-                    color: white;
-
-                    ul{
-                        display: flex;
-                        gap: 2em;
-                        margin-left: -2em;
-                        li{
-                            list-style: none;
-                            a{
-                                 color: white;
-                                 text-decoration: 0;
-                                 font-family: "montserrat";
-                                 font-size: 1;
-
-                            }
-
-
-
-                        }
-                    }
-                    p{
-                           color: white;
-                                 text-decoration: 0;
-                                 font-family: "montserrat";
-                                 font-size: 1;
-                    }
-                
-                }
-
+                gap: 2em;
+            }
+            .footerContent ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                transition: color 0.3s ease;
+            }
+            .footerContent ul li a:hover {
+                color: #15b800;
+            }
+            .footerContent p {
+                font-size: 0.9em;
+                color: #aaa;
             }

@@ -38,16 +38,17 @@ body{
          
             position: relative;
               nav{
-                display: flex;
+                     display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background: rgba(3, 0, 0, 0.329); /* A semi-transparent white background */
+                background: rgba(3, 0, 0, 0.849); /* A semi-transparent white background */
                 backdrop-filter: blur(4px); 
-                border-radius: 1em;
-                position: absolute;
-                top: 1em;
-                height: 4em;
-                width: 100%;
+                border-radius: 100em;
+                position: fixed;
+                top: .2em;
+                height: 5em;
+                width: 92%;
+                z-index: 100;
              
           
            
@@ -106,7 +107,7 @@ body{
 
 
 
-/* The main container for the animated words */
+
 .heroSection h2 .word-wrapper {
   display: inline-block;
   height: 1.2em;
@@ -114,35 +115,31 @@ body{
   vertical-align: top;
 }
 
-/* Each individual word to be typed */
+
 .heroSection h2 .word {
   display: block;
   font-weight: bold;
   
-  /* Initial state: The word is hidden */
+
   width: 0;
   overflow: hidden;
   white-space: nowrap;
   
-  /* The "cursor" effect */
-  border-right: 3px solid white; /* Adjust color as needed */
+ 
+  border-right: 3px solid white; 
   
-  /* Combined animation: the words change, and each is typed out */
   animation: 
-    slide-words 6s infinite steps(1), /* The sliding animation */
-    typing-word 2s infinite forwards; /* The typing animation */
+    slide-words 6s infinite steps(1), 
+    typing-word 2s infinite forwards; 
 }
 
-/* The sliding animation for the whole word-stack */
 @keyframes slide-words {
   0%, 33.33% { transform: translateY(0); }
   33.34%, 66.66% { transform: translateY(-1.2em); }
   66.67%, 100% { transform: translateY(-2.4em); }
 }
 
-/* The typing animation */
 @keyframes typing-word {
-  /* This animation uses steps() to reveal the text one character at a time */
   0%, 100% { width: 0; }
   10%, 30% { width: 100%; }
 }
@@ -273,11 +270,9 @@ body{
                  font-family: "Montserrat";
                 font-size: 1em;
                 color: white;
-                /* The core glass effect properties */
-                    background: rgba(255, 255, 255, 0); /* Semi-transparent white background */
-                    backdrop-filter: blur(10px); /* The most important property: blurs the background */
+                    background: rgba(255, 255, 255, 0); 
+                    backdrop-filter: blur(10px); 
                     
-                    /* Add extra styling for a more polished look */
                     border-radius: 16px;
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -321,33 +316,38 @@ body{
              font-size: 1em;
              text-align: left; 
     }
-    .cubsContainer{
+ .cubsContainer{
        .chess{
         display: flex;
         gap: 3em;
         justify-content: space-between;
         padding-bottom: 8em;
         .chessleft{
+          display: flex;
+          flex-direction: column;
             width: 50%;
             h6{
                 font-size: 2em;
             }
             p{width: 80%;
-            margin-top: -3em;}
-            button{
+            margin-top: -3em;
+          }
+            .more{
                 padding: 1em 5em;
                 background-color: green;
                 color: white;
-                border-radius: 5px;
+                border-radius: 1em 0;
                 border: none;
                 font-family: "Montserrat";
                 font-size: 1em;
-                margin-top: 1em;
+                margin-top: 3em;
+                text-decoration: 0;
+                width: 6em;
             }
             
         }
         img{
-            width: 30em;
+            width: 40%;
             border-radius: 10px;
            
         }
@@ -440,122 +440,3 @@ body{
 
             }
 
-
-            /* Mobile phones (≤ 600px) */
-@media screen and (max-width: 600px) {
-  .heroSection h2 {
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  .heroSection p {
-    font-size: 0.9em;
-    text-align: center;
-  }
-
-  .who-we-are-bottom {
-    flex-direction: column;
-    gap: 2em;
-  }
-
-  .who-we-are-bottom-left,
-  .who-we-are-bottom-right {
-    width: 100%;
-    text-align: center;
-  }
-
-  .who-we-are-bottom-left svg,
-  .whoWeAreImgs img {
-    width: 100%;
-    padding: 1em;
-  }
-
-  .who-we-are-bottom-right p,
-  .who-we-are-bottom-left p {
-    width: 100%;
-  }
-
-  .visionContent {
-    left: 1em;
-    right: 1em;
-    gap: 2em;
-  }
-
-  .visionContent ol {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .ourclubsContent .chess {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .chessleft,
-  .chessleft p,
-  .chessleft button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .chessleft p {
-    margin-top: 1em;
-  }
-
-  .chess img {
-    width: 100%;
-  }
-
-  .footerContent ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-  }
-}
-
-
-/* Tablets (601px – 1024px) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .heroSection h2 {
-    font-size: 2.5em;
-  }
-
-  .who-we-are-bottom {
-    flex-direction: column;
-    gap: 3em;
-  }
-
-  .who-we-are-bottom-left svg {
-    width: 80%;
-  }
-
-  .whoWeAreImgs img {
-    width: 100%;
-  }
-
-  .chess {
-    flex-direction: column;
-  }
-
-  .chessleft,
-  .chess img {
-    width: 100%;
-  }
-}
-
-
-/* Desktops (larger than 1024px) */
-@media screen and (min-width: 1025px) {
-  /* Optional: Tweak things for large screens */
-  .heroSection h2 {
-    font-size: 3em;
-  }
-
-  .who-we-are-bottom {
-    flex-direction: row;
-  }
-
-  .chess {
-    flex-direction: row;
-  }
-}

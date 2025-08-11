@@ -1,0 +1,173 @@
+     body{
+         background: #0d0d0d;
+         color: #fff;
+         width: 100wh;
+         display: flex;
+         flex-direction: column;
+         font-family: "montserrat";
+        
+     }
+     header{
+        display: flex;
+        justify-content: center;
+     }
+     nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(3, 0, 0, 0.849); 
+                backdrop-filter: blur(4px); 
+                border-radius: 100em;
+                position: fixed;
+                top: .2em;
+                height: 5em;
+                width: 92%;
+             
+          
+           
+
+            .logo{
+                margin-left: 4em;
+                svg{
+                    width: 2em;
+                }
+                
+            }
+            ul{
+                display: flex;
+                gap: 2em;
+                  margin-right: 4em;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Montserrat";
+                    }
+                }
+            }
+           
+
+        }
+
+            .join-form-section {
+                padding: 8em 2em;
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .join-form-section h1 {
+                font-size: 2.5em;
+                margin-bottom: 1em;
+                color: #15b800;
+                text-align: left;
+            }
+
+            .join-form {
+                background: #111;
+                padding: 2em;
+                border-radius: 1em;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-group label {
+                font-size: 1.2em;
+                margin-bottom: 0.5em;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                width: 100%;
+                padding: 0.8em;
+                border: 1px solid #333;
+                background: #0d0d0d;
+                color: #fff;
+                border-radius: 0.5em;
+                font-size: 1em;
+            }
+
+            .form-group textarea {
+                resize: vertical;
+                min-height: 150px;
+            }
+
+            .submit-btn {
+                background: #15b800;
+                color: #000;
+                border: none;
+                padding: 1em 2em;
+                border-radius: 0.5em;
+                font-size: 1.2em;
+                font-weight: 700;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            .submit-btn:hover {
+                background: #119900;
+            }
+            
+           
+            footer {
+                background: #000;
+                text-align: center;
+                padding: 2em;
+                border-top: 1px solid #111;
+            }
+            .footerContent {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .footerContent ul {
+                list-style: none;
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+            }
+            .footerContent ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                transition: color 0.3s ease;
+            }
+            .footerContent ul li a:hover {
+                color: #15b800;
+            }
+            .footerContent p {
+                font-size: 0.9em;
+                color: #aaa;
+            }
+
+            @media (max-width: 768px) {
+                header {
+                    padding: 1em;
+                }
+                nav ul {
+                    flex-direction: column;
+                }
+                .join-form-section {
+                    padding: 2em 1em;
+                }
+                .join-form-section h1 {
+                    font-size: 2em;
+                }
+                .footerContent ul {
+                    flex-direction: column;
+                    gap: 1em;
+                }
+            }
+     .fillp{
+        text-align: left;
+     }

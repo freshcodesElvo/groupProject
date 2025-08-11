@@ -1,0 +1,554 @@
+body{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(188, 173, 255);
+    font-family: "montserrat";
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      
+
+    }
+}
+.hero{
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    width: 100vw;
+    /* height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 9)), url("/assets/36-Popular-Clubs-for-High-School-Students-to-Explore-3-1024x538.jpg"); */
+
+
+    .heroContent{
+
+        width: 90vw;
+        height: 100%;
+        position: relative;
+        header{
+         
+            position: relative;
+              nav{
+                      display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(3, 0, 0, 0.849); /* A semi-transparent white background */
+                backdrop-filter: blur(4px); 
+                border-radius: 100em;
+                position: fixed;
+                top: .2em;
+                height: 5em;
+                width: 92%;
+             
+          
+           
+
+            .logo{
+                margin-left: 4em;
+                svg{
+                    width: 2em;
+                }
+                
+            }
+            ul{
+                display: flex;
+                gap: 2em;
+                  margin-right: 4em;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Montserrat";
+                    }
+                }
+            }
+           
+
+        }
+        }
+    }
+    .heroSection{
+        position: absolute;
+      
+        bottom: 4em;
+        
+        h2{
+            color: white;
+             font-family: "Montserrat";
+             font-size: 3em;
+             text-align: left;
+
+        }
+        p{
+            color: white;
+             font-family: "Montserrat";
+             font-size: 1em;
+             span{
+                color: rgb(0, 231, 0);
+                font-size: 1.6em;
+             }
+        }
+
+    }
+   
+
+}
+
+
+
+/* The main container for the animated words */
+.heroSection h2 .word-wrapper {
+  display: inline-block;
+  height: 1.2em;
+  overflow: hidden; 
+  vertical-align: top;
+}
+
+/* Each individual word to be typed */
+.heroSection h2 .word {
+  display: block;
+  font-weight: bold;
+  
+  /* Initial state: The word is hidden */
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  /* The "cursor" effect */
+  border-right: 3px solid white; /* Adjust color as needed */
+  
+  /* Combined animation: the words change, and each is typed out */
+  animation: 
+    slide-words 6s infinite steps(1), /* The sliding animation */
+    typing-word 2s infinite forwards; /* The typing animation */
+}
+
+/* The sliding animation for the whole word-stack */
+@keyframes slide-words {
+  0%, 33.33% { transform: translateY(0); }
+  33.34%, 66.66% { transform: translateY(-1.2em); }
+  66.67%, 100% { transform: translateY(-2.4em); }
+}
+
+/* The typing animation */
+@keyframes typing-word {
+  /* This animation uses steps() to reveal the text one character at a time */
+  0%, 100% { width: 0; }
+  10%, 30% { width: 100%; }
+}
+
+
+.who-we-are{
+   
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+   
+    .who-we-are-bottom{
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        gap: 4em;
+        .who-we-are-bottom-left{
+             h3{
+                color: rgb(29, 29, 29);
+                font-family: "Montserrat";
+                font-size: 2em;
+                text-align: left;
+        }
+            svg{
+                width: 20em;
+                border: 2px solid green;
+                padding: 3em;
+                border-radius: 1em;
+              
+            }
+            p{
+             font-family: "Montserrat";
+             font-size: 1em;
+              width: 26em;
+             
+            }
+        }
+        .who-we-are-bottom-right{
+            display: flex;
+            flex-direction: column;
+            h4{
+                color: rgb(29, 29, 29);
+             font-family: "Montserrat";
+             font-size: 1.4em;
+             text-align: left;
+
+            }
+            p{
+                width: 40em;
+                 font-family: "Montserrat";
+                font-size: 1em;
+                color: black;
+            }
+            .whoWeAreImgs{
+                margin-top: 2em;
+                display: flex;
+                gap: 1em;
+                img{
+                    width: 24em;
+                    border-radius: 1em;
+
+                }
+            }
+        }
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10em;
+  
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+        .vission-container{
+        
+            video{
+                border-radius: 1em;
+                width: 90vw;
+                filter: brightness(.6);
+                
+            
+              
+            }
+          
+            height: 100vh;
+          
+              position: relative;
+
+        }
+        .visionContent{
+          
+            position: absolute;
+            top:0;
+            left: 4em;
+            right: 4em;
+            display: flex;
+            gap: 4em;
+            flex-direction: column;
+            h3{
+                color: rgb(255, 255, 255);
+                font-family: "Montserrat";
+                font-size: 2em;
+                text-align: left; 
+            }
+            p{
+                 font-family: "Montserrat";
+                font-size: 1em;
+                color: white;
+            }
+            ol{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3em;
+                 margin-top: -1em;
+                  
+                   
+              
+                li{
+                   
+                 font-family: "Montserrat";
+                font-size: 1em;
+                color: white;
+                /* The core glass effect properties */
+                    background: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+                    backdrop-filter: blur(10px); /* The most important property: blurs the background */
+                    
+                    /* Add extra styling for a more polished look */
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    padding: 3em;
+                    max-width: 400px;
+
+                }
+            }
+
+        }
+  
+    }
+  
+
+
+}
+.ourClubs{
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6em;
+    
+    .ourclubsContent{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        width: 90%;
+     
+       
+        h3, h5{
+         color: rgb(20, 20, 20);
+             font-family: "Montserrat";
+             font-size: 2em;
+             text-align: left; 
+    }
+    p{
+        color: rgb(20, 20, 20);
+             font-family: "Montserrat";
+             font-size: 1em;
+             text-align: left; 
+    }
+    .cubsContainer{
+       .chess{
+        display: flex;
+        gap: 3em;
+        justify-content: space-between;
+        padding-bottom: 8em;
+        .chessleft{
+          display: flex;
+          flex-direction: column;
+            width: 50%;
+            h6{
+                font-size: 2em;
+            }
+            p{width: 80%;
+            margin-top: -3em;
+          }
+            .more{
+                padding: 1em 5em;
+                background-color: green;
+                color: white;
+                border-radius: 1em 0;
+                border: none;
+                font-family: "Montserrat";
+                font-size: 1em;
+                margin-top: 3em;
+                text-decoration: 0;
+                width: 6em;
+            }
+            
+        }
+        img{
+            width: 40%;
+            border-radius: 10px;
+           
+        }
+       } 
+    }
+  
+    }
+
+
+}
+.lastSection{
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8em;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 9)), url("/assets/Copilot_20250805_223554.png"); */
+    background-size: cover;
+    .lastSectionContent{
+        width: 90%;
+        h3{
+            color: rgb(29, 29, 29);
+            font-family: "Montserrat";
+            font-size: 2em;
+        }
+    }
+}
+.readyToDiscover{
+            color: rgb(29, 29, 29);
+            font-family: "Montserrat";
+            font-size: 1em;
+            margin-top: 4em;
+            
+
+            
+            a{
+                padding: .6em 3em;
+                background-color: green;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                font-family: "Montserrat";
+                font-size: 1em;
+                margin-top: 5em;
+                text-decoration: 0;
+            }
+}
+.encouragement{
+                 font-family: "Montserrat";
+                  font-size: 1em;
+            }
+
+footer {
+                background: #000;
+                text-align: center;
+                padding: 2em;
+                border-top: 1px solid #111;
+            }
+            .footerContent {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .footerContent ul {
+                list-style: none;
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+            }
+            .footerContent ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                transition: color 0.3s ease;
+            }
+            .footerContent ul li a:hover {
+                color: #15b800;
+            }
+            .footerContent p {
+                font-size: 0.9em;
+                color: #aaa;
+            }
+
+
+@media screen and (max-width: 600px) {
+  .heroSection h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .heroSection p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .who-we-are-bottom {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .who-we-are-bottom-left,
+  .who-we-are-bottom-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .who-we-are-bottom-left svg,
+  .whoWeAreImgs img {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .who-we-are-bottom-right p,
+  .who-we-are-bottom-left p {
+    width: 100%;
+  }
+
+  .visionContent {
+    left: 1em;
+    right: 1em;
+    gap: 2em;
+  }
+
+  .visionContent ol {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .ourclubsContent .chess {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chessleft,
+  .chessleft p,
+  .chessleft button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .chessleft p {
+    margin-top: 1em;
+  }
+
+  .chess img {
+    width: 100%;
+  }
+
+  .footerContent ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .heroSection h2 {
+    font-size: 2.5em;
+  }
+
+  .who-we-are-bottom {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .who-we-are-bottom-left svg {
+    width: 80%;
+  }
+
+  .whoWeAreImgs img {
+    width: 100%;
+  }
+
+  .chess {
+    flex-direction: column;
+  }
+
+  .chessleft,
+  .chess img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .heroSection h2 {
+    font-size: 3em;
+  }
+
+  .who-we-are-bottom {
+    flex-direction: row;
+  }
+
+  .chess {
+    flex-direction: row;
+  }
+}

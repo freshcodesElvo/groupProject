@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+       background: #0d0d0d;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 9)), url("/assets/cyberSecurity.webp");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+
+}
+.club-detail{
+   
+    .jhub-club{
+         padding-bottom: 6em;
+   
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 2000px; */
+        display: flex;
+         .jhub-club-left{
+        width: 50%;
+    }
+   
+
+    }
+      button{
+                padding: 1em 5em;
+                background-color: green;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                font-family: "Montserrat";
+                font-size: 1em;
+                margin-top: 1em;
+            }
+   
+}
+
+
+.learning-technology-enjoyable{
+    padding-bottom: 6em;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    .learning-technology-enjoyable-left{
+        width: 50%;
+
+    }
+    img{
+        border-radius: 1em;
+    }
+}
+.whyJoin{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 9)), url("/assets/1358905.png");
+        padding-top: 6em;
+         padding-bottom: 6em;
+
+}
+.Virtual-Club-Meetings{
+
+    width: 100vw;
+    background-color: rgb(43, 43, 255);
+    padding-top: 4em;
+       padding-bottom: 4em;
+    .Virtual-Club-Meetings-content{
+        display: flex;
+        justify-content: center;
+        .Virtual-Club-Meetings-content-left{
+            width: 40%;
+            h3{
+                font-size: 2em;
+           
+            }
+            .p1{
+               margin-top: 1em;
+            }
+            h4{
+                   font-size: 2em;
+            }
+            ul{
+                margin-top: 5em;
+                li{
+                    margin-top: 1.4em;
+                }
+            }
+        }
+    }
+}
+.awareness-month{
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 9)), url("/assets/ee57988a-5e2d-49dd-901c-89af9b9f6108.jpg");
+    padding-bottom: 5em;
+    padding-top: 5em;
+    .awareness-month-content{
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        .awareness-month-content-left{
+            h5{
+                font-size: 2em;
+                color: rgb(43, 43, 255);
+
+            }
+        }
+        .awareness-month-content-right{
+       
+            width: 40%;
+            h6{
+                font-size: 2em;
+            }
+            ul{
+                li{
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+
+}
+.why-jkuatcyber-Matters{
+       background-color: rgb(43, 43, 255);
+       width: 100vw;
+    .why-jkuatcyber-Matters-content{
+         
+
+        display: flex;
+        justify-content: center;
+        padding-top: 4em;
+         padding-bottom: 4em;
+        gap: 6em;
+        .why-jkuatcyber-Matters-content-left{
+            h4{
+                font-size: 2em;
+            }
+            width: 40%;
+        }
+        img{
+            width: 20%;
+        }
+    }
+}
+
+.meet-the-faculty{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    width: 100vw;
+    display: flex;
+    
+        justify-content: center;
+    .facultyContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 2em;
+        }
+        .mainP{
+            width: 50%;
+            text-align: left;
+        }
+        ul{
+            display: flex;
+            gap: 4em;
+            li{
+                border: 2px solid wheat;
+                padding-left: 1em;
+                padding-right: 1em;
+                display: flex;
+                width: 24em;
+                border-radius: 1em;
+                list-style: none;
+                justify-content: center;
+                    align-items: center;
+                    gap: 2em;
+                img{
+                    width: 6em;
+                    height: 6em;
+                    border-radius: 1em;
+                    
+                    
+                }
+
+            }
+        }
+    }
+
+
+}
+
+.getInvolved{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    .getInvolvedContent{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+        img{
+            width: 30%;
+        }
+    }
+}

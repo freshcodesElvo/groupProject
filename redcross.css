@@ -52,3 +52,26 @@
     }
     
 }
+.whyJoin{
+    background: rgb(202, 0, 0);
+    padding-top: 4em;
+      padding-bottom: 4em;
+}
+.achivements{
+    display: flex;
+    justify-content: center;
+    .achivementsContent{
+
+    }
+}
+.getInvolved{
+   .getInvolvedContent{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 50%;
+    }
+   }
+}

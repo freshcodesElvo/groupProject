@@ -1,0 +1,428 @@
+body{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    /* align-items: center; */
+    background-color: rgb(188, 173, 255);
+      color: white;
+      font-family: "montserrat";
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      
+
+    }
+}
+.hero{
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 9)), url("/assets/edited-image.png"); */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #0d0d0d;
+    .heroContent{
+
+        width: 90vw;
+        height: 100%;
+        position: relative;
+        header{
+         
+            position: relative;
+              nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(3, 0, 0, 0.849); /* A semi-transparent white background */
+                backdrop-filter: blur(4px); 
+                border-radius: 100em;
+                position: fixed;
+                top: .2em;
+                height: 5em;
+                width: 92%;
+
+            .logo{
+                margin-left: 4em;
+                svg{
+                    width: 2em;
+                }
+                
+            }
+            ul{
+                display: flex;
+                gap: 2em;
+                  margin-right: 4em;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Montserrat";
+                    }
+                }
+            }
+           
+
+        }
+        }
+    }
+    .heroSection{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        gap: 6em;
+
+
+        width: 90%;
+      
+        top: 10em;
+        left: 3em;
+    
+        .left{
+            height: 20em;
+          
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            h1{
+            color: white;
+            font-size: 3em;
+            font-family: "Montserrat";
+
+        }
+        h2{
+            color: white;
+             font-family: "Montserrat";
+             font-size: 3em;
+             text-align: left;
+           
+
+        }
+        p{
+            color: rgb(194, 194, 194);
+             font-family: "Montserrat";
+             font-size: 1.4em;
+             margin-top: -.2em;
+         
+             span{
+                color: rgb(0, 231, 0);
+                font-size: 1.6em;
+             }
+        }
+         a{
+                background: green;
+                padding: 1em 4em;
+                border: 0;
+                color: #fff;
+                border-radius: 1em 0;
+                font-family: "montserrat";
+                font-size: 1em;
+                margin-top: 5em;
+                width: 8em;
+                text-decoration: none;
+             }
+        }
+        .right{
+            img{
+           
+                width: 20em;
+                /* border: 2px solid green; */
+
+            }
+            
+        }
+
+    }
+   
+
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    filter: brightness(0.2);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
+  .scrolling-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            height: 800px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            right: -6em;
+            top: -6em;
+            z-index: -2;
+         
+        
+        }
+
+        .vertical-scroll-wrapper {
+            position: absolute;
+            top: 0;
+            left: -2em;
+            width: 50%;
+            height: 200%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            animation: scrollUp 15s linear infinite;
+            gap: 2em;
+        }
+
+        .horizontal-scroll-wrapper {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%; 
+            height: 200%; 
+            display: flex;
+            flex-direction: column; 
+            flex-wrap: nowrap;
+            animation: scrollDown 15s linear infinite;
+               gap: 2em;
+        }
+
+        .scrolling-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #1e1e1e;
+            border-radius: 1em;
+            
+        }
+
+        @keyframes scrollUp {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        @keyframes scrollDown {
+            0% {
+                transform: translateY(-50%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
+        
+        .scrolling-image {
+            background-size: cover;
+            background-position: center;
+        }
+
+         #why-join-a-club{
+            h2{
+                color: #000000;
+            }
+            padding-top: 5em;
+             padding-bottom: 5em;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            .why-join-a-club-content{
+                width: 90%;
+               
+                .why{
+                    padding-top: 2em;
+                     display: flex;
+           
+                justify-content: center;
+                    display: flex;
+                    gap: 6em;
+
+                    img{
+                        width: 40em;
+                        height: 26em;
+                        border-radius: 1em;
+                    }
+                }
+               .benefits-list{
+                display: flex;
+                flex-wrap: wrap;
+                width: 40%;
+                gap: 2em;
+                .benefit-card{
+                background-color: rgb(164, 144, 255);
+                    color: #000000;
+                    padding: 1em;
+                    border-radius: 1em 0;
+                    margin-top: 1em;
+    
+
+                    ion-icon{
+                        font-size: 2em;
+                    }
+                }
+               
+               }
+            }
+            
+         }
+
+            #club-highlights{
+                padding-top: 4em;
+                  padding-bottom: 4em;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background: black;
+                .highlights-grid{
+                    display: flex;
+                  flex-direction: column;
+                
+                    .highlight-item{
+                        padding-bottom: 6em;
+                        display: flex;
+                        gap: 10em;
+                        justify-content: center;
+                  
+                        .highlight-item-left{
+                            width: 30%;
+                            p{
+                                color: #b9b9b9;
+                            }
+                        }
+                        img{
+                            width: 30%;
+                            border-radius: 1em;
+                        }
+                    }
+                }
+            }
+
+
+            #for-who {
+                padding: 4em 2em;
+                color: #fff;
+                
+            
+            }
+
+            #for-who h2 {
+                font-size: 2em;
+                margin-bottom: 1.5em;
+                color: #000000;
+            }
+
+            .who-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2em;
+            }
+
+            .who-item {
+                flex: 1 1 300px;
+                background-color: rgb(164, 144, 255);
+                padding: 2em;
+                border-radius: 1em;
+                text-align: left;
+                color: #000000;
+            }
+            
+            .who-item h3 {
+                font-size: 1.5em;
+                margin-bottom: 0.5em;
+            }
+
+            .who-item p {
+                font-size: 1em;
+                color: #000000;
+            }
+
+            #join-section{
+                width: 100%;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #000000;
+                    padding-bottom: 6em;
+
+                .join-section-content{
+                    width: 90%;
+                    display: flex;
+                             flex-direction: column;
+
+                    
+                    h2{
+
+                    }
+                    .join-btn{
+                        background: green;
+                        padding: 1em 4em;
+                        border: 0;
+                        color: #fff;
+                        border-radius: 1em 0;
+                        font-family: "montserrat";
+                        font-size: 1em;
+                        width: 8em;
+                        text-decoration: none;
+                        margin-top: 2em;
+              
+                    }
+
+                }
+
+
+            }
+
+              footer {
+                background: #000;
+                text-align: center;
+                padding: 2em;
+                border-top: 1px solid #111;
+            }
+            .footerContent {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .footerContent ul {
+                list-style: none;
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+            }
+            .footerContent ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                transition: color 0.3s ease;
+            }
+            .footerContent ul li a:hover {
+                color: #15b800;
+            }
+            .footerContent p {
+                font-size: 0.9em;
+                color: #aaa;
+            }
