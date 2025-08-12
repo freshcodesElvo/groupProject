@@ -42,7 +42,7 @@ body{
                       display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background: rgba(3, 0, 0, 0.849); /* A semi-transparent white background */
+                background: rgba(3, 0, 0, 0.849); 
                 backdrop-filter: blur(4px); 
                 border-radius: 100em;
                 position: fixed;
@@ -107,7 +107,6 @@ body{
 
 
 
-/* The main container for the animated words */
 .heroSection h2 .word-wrapper {
   display: inline-block;
   height: 1.2em;
@@ -115,26 +114,22 @@ body{
   vertical-align: top;
 }
 
-/* Each individual word to be typed */
 .heroSection h2 .word {
   display: block;
   font-weight: bold;
   
-  /* Initial state: The word is hidden */
   width: 0;
   overflow: hidden;
   white-space: nowrap;
   
-  /* The "cursor" effect */
-  border-right: 3px solid white; /* Adjust color as needed */
-  
-  /* Combined animation: the words change, and each is typed out */
+
+  border-right: 3px solid white; 
+
   animation: 
-    slide-words 6s infinite steps(1), /* The sliding animation */
-    typing-word 2s infinite forwards; /* The typing animation */
+    slide-words 6s infinite steps(1), 
+    typing-word 2s infinite forwards; 
 }
 
-/* The sliding animation for the whole word-stack */
 @keyframes slide-words {
   0%, 33.33% { transform: translateY(0); }
   33.34%, 66.66% { transform: translateY(-1.2em); }
@@ -143,7 +138,6 @@ body{
 
 /* The typing animation */
 @keyframes typing-word {
-  /* This animation uses steps() to reveal the text one character at a time */
   0%, 100% { width: 0; }
   10%, 30% { width: 100%; }
 }

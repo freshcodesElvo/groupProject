@@ -41,7 +41,7 @@ body{
                      display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background: rgba(3, 0, 0, 0.849); /* A semi-transparent white background */
+                background: rgba(3, 0, 0, 0.849); 
                 backdrop-filter: blur(4px); 
                 border-radius: 100em;
                 position: fixed;
