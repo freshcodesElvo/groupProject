@@ -31,7 +31,7 @@ body{
 
     .heroContent{
 
-        width: 90vw;
+        width: 1450px;
         height: 100%;
         position: relative;
         header{
@@ -220,8 +220,11 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+       
      
         .vission-container{
+
+            
         
             video{
                 border-radius: 1em;
@@ -246,6 +249,10 @@ body{
             display: flex;
             gap: 4em;
             flex-direction: column;
+              width: 1450px;
+          
+          
+         
             h3{
                 color: rgb(255, 255, 255);
                 font-family: "Montserrat";
@@ -301,7 +308,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center; */
-        width: 90%;
+        width: 1450px;
      
        
         h3, h5{
@@ -367,7 +374,7 @@ body{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 9)), url("/assets/Copilot_20250805_223554.png"); */
     background-size: cover;
     .lastSectionContent{
-        width: 90%;
+        width: 1450px;
         h3{
             color: rgb(29, 29, 29);
             font-family: "Montserrat";

@@ -291,12 +291,11 @@ body{
                 background: #0d0d0d;
                 align-items: center;
                 .highlights-grid{
-                    display: flex;
-                  flex-direction: column;
-               
-                     width: 1550px;       
-
-                
+                      display: flex;
+                      width: 1450px; 
+                      justify-content: center;   
+                      align-items: center;
+                      flex-direction: column;
                     .highlight-item{
                         padding-bottom: 6em;
                         display: flex;
@@ -321,6 +320,12 @@ body{
             #for-who {
                 padding: 4em 2em;
                 color: #fff;
+                width: 100ww;
+                display: flex;
+                justify-content: center;
+                .for-who-content{
+                    width: 1450px;
+                }
                 
             
             }
@@ -358,7 +363,7 @@ body{
             }
 
             #join-section{
-                width: 100%;
+                width: 100vw;
                 display: flex;
                     justify-content: center;
                     align-items: center;
@@ -366,7 +371,7 @@ body{
                     padding-bottom: 6em;
 
                 .join-section-content{
-                    width: 90%;
+                    width: 1450px;
                     display: flex;
                              flex-direction: column;
 

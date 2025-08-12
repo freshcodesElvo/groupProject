@@ -5,9 +5,10 @@ main{
         
       .club-detail{
 
-        width: 100vw;
+        width: 1550px;
         .web3-club{
-                width: auto;
+             
+             
       
                 display: flex;
                 flex-direction:row-reverse;
@@ -18,7 +19,7 @@ main{
       
                 .web3-club-left{
                         font-family: "montserrat";
-                        width: 30%;
+                        width: 47%;
                         h1{
                                 
                         }
@@ -54,6 +55,7 @@ main{
         display: flex;
         justify-content: center;
         gap: 4em;
+        width: 1450px;
         .learning-technology-enjoyable-left{
         width: 50%;
         
@@ -89,6 +91,7 @@ main{
 
         .achivementsContent{
               display: flex;
+            
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
@@ -107,9 +110,10 @@ main{
          justify-content: center;
          align-items: center;
          .getInvolvedContent{
-          
+        
+          width: 1450px;
                  display: flex;
-         justify-content: center;
+        
          align-items: center;
                 img{
                         width: 40em;

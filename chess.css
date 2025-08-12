@@ -31,7 +31,7 @@ body{
     overflow: hidden;
     .heroContent{
 
-        width: 90vw;
+        width: 1450px;
         height: 100%;
         position: relative;
         header{
@@ -76,6 +76,12 @@ body{
     }
     .heroSection{
         position: absolute;
+         width: 1550px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      
+        
       
         bottom: 4em;
         h1{
@@ -121,6 +127,7 @@ body{
 .heroContent {
     position: relative;
     z-index: 1;
+   
 }
 
 main{
@@ -135,7 +142,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 1450px;
   
        
         .chess-club{
@@ -194,8 +201,9 @@ main{
     background-size: cover;
 
     .whyJoin-content{
-       
-    
+
+      
+        width: 1450px;
     
         h2{
             color: white;
@@ -253,6 +261,7 @@ main{
     padding-top: 3em;
   
     .achivementsContent{
+        width: 1450px;
         h2{
             font-family: "montserrat";
         }
@@ -286,7 +295,7 @@ main{
     justify-content: center;
     padding-bottom: 4em;
     .getInvolvedContent{
-        width: 90%;
+        width: 1450px;
         display: flex;
         padding-top: 4em;
         gap: 4em;

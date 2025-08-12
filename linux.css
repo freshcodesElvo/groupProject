@@ -84,7 +84,7 @@
     padding-top: 2em;
      padding-bottom: 2em;
     .materialsContent{
-        width: 90%;
+        width: 1550px;
    
         display: flex;
         justify-content: space-around;
@@ -115,6 +115,6 @@
       width: 100vw;
     .achivementsContent{
     
-        width: 90%;
+        width: 1450px;
     }
 }
