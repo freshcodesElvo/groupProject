@@ -53,12 +53,12 @@ main{
        
         font-family: "montserrat";
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 4em;
         width: 1450px;
         .learning-technology-enjoyable-left{
         width: 50%;
-        
+       
         
         }
         .learning-technology-enjoyable-right{

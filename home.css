@@ -32,10 +32,13 @@ body{
     .heroContent{
 
         /* width: 90vw; */
-    width: 1550px;       
+    width: 1450px;       
      height: 100%;
+   
         position: relative;
         header{
+        
+            
          
             position: relative;
               nav{
@@ -48,7 +51,8 @@ body{
                 position: fixed;
                 top: .2em;
                 height: 5em;
-                width: 92%;
+                   width: 1450px;       
+
                 z-index: 100;
 
             .logo{
@@ -61,6 +65,8 @@ body{
             ul{
                 display: flex;
                 gap: 2em;
+                justify-content: center;
+                align-items: center;
                   margin-right: 4em;
                 li{
                     list-style: none;
@@ -70,6 +76,14 @@ body{
                         font-family: "Montserrat";
                     }
                 }
+               .joinCTA { 
+                    background-color: green; 
+                    padding: .6em 1em; 
+                    border-radius: 1em 0; 
+                    box-shadow: 5px 5px 400px green;
+                    animation: flicker-shadow 1s infinite alternate;
+
+                    }
             }
            
 
@@ -238,23 +252,20 @@ body{
             display: flex;
             justify-content: center;
             .why-join-a-club-content{
-                    width: 1450px;    
-                
-               
-           
-
-               
+                   width: 1410px;    
+            
+                   
                 .why{
                     padding-top: 2em;
                      display: flex;
            
-                justify-content: center;
+                justify-content: space-between;
                     display: flex;
                     gap: 6em;
 
                     img{
-                        width: 40em;
-                        height: 26em;
+                        width: 50em;
+                        height: 30em;
                         border-radius: 1em;
                     }
                 }
@@ -292,7 +303,7 @@ body{
                 align-items: center;
                 .highlights-grid{
                       display: flex;
-                      width: 1450px; 
+                      width: 1410px; 
                       justify-content: center;   
                       align-items: center;
                       flex-direction: column;
@@ -324,7 +335,7 @@ body{
                 display: flex;
                 justify-content: center;
                 .for-who-content{
-                    width: 1450px;
+                    width: 1410px;
                 }
                 
             
@@ -371,7 +382,7 @@ body{
                     padding-bottom: 6em;
 
                 .join-section-content{
-                    width: 1450px;
+                    width: 1410px;
                     display: flex;
                              flex-direction: column;
 
@@ -428,3 +439,12 @@ body{
                 font-size: 0.9em;
                 color: #aaa;
             }
+
+                         @keyframes flicker-shadow {
+                0%, 100% {
+                    box-shadow: 0 0 0px green;
+                }
+                100% {
+                    box-shadow: 20px 10px 50px green;
+                }
+}

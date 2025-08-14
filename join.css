@@ -33,10 +33,12 @@
                 }
                 
             }
-            ul{
+           ul{
                 display: flex;
                 gap: 2em;
                   margin-right: 4em;
+                  justify-content: center;
+                  align-items: center;
                 li{
                     list-style: none;
                     a{
@@ -45,6 +47,12 @@
                         font-family: "Montserrat";
                     }
                 }
+                .joinCTA { 
+                    background-color: green; 
+                    padding: .6em 1em; 
+                    border-radius: 1em 0; 
+                    box-shadow: 5px 5px 40px green;
+                    }
             }
            
 
@@ -55,6 +63,7 @@
                 max-width: 800px;
                 margin: 0 auto;
                 text-align: center;
+    
             }
 
             .join-form-section h1 {
@@ -62,18 +71,49 @@
                 margin-bottom: 1em;
                 color: #15b800;
                 text-align: left;
+                
+                  background: transparent;
             }
 
             .join-form {
                 background: #111;
                 padding: 2em;
                 border-radius: 1em;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
                 text-align: left;
                 display: flex;
                 flex-direction: column;
                 gap: 1.5em;
+                box-shadow: 5px 5px 400px green;
+                  animation: flicker-shadow 1s infinite alternate;
             }
+
+            @keyframes flicker-shadow {
+                0%, 100% {
+                    box-shadow: 0 0 0px rgb(0, 2, 128);
+                }
+                100% {
+                    box-shadow: 0 0 400px green;
+                }
+                /* 50% {
+                    box-shadow: 0 0 150px green;
+                }
+                75% {
+                    box-shadow: 0 0 350px green;
+                } */
+                }
+
+
+
+
+
+
+
+
+
+
+
+
 
             .form-group {
                 display: flex;

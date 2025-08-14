@@ -11,8 +11,8 @@ body{
 
     header{
         width: 90%;
-         nav{
-                    display: flex;
+                 nav{
+                     display: flex;
                 justify-content: space-between;
                 align-items: center;
                 background: rgba(3, 0, 0, 0.849); 
@@ -21,18 +21,20 @@ body{
                 position: fixed;
                 top: .2em;
                 height: 5em;
-                width: 92%;
-
+                width: 1450px;
+                z-index: 100;
             .logo{
                 margin-left: 4em;
                 svg{
                     width: 2em;
-                }     
+                }
             }
             ul{
                 display: flex;
                 gap: 2em;
                   margin-right: 4em;
+                  justify-content: center;
+                  align-items: center;
                 li{
                     list-style: none;
                     a{
@@ -41,9 +43,14 @@ body{
                         font-family: "Montserrat";
                     }
                 }
+                .joinCTA { 
+                    background-color: green; 
+                    padding: .6em 1em; 
+                    border-radius: 1em 0; 
+                    box-shadow: 5px 5px 400px green;
+                    animation: flicker-shadow 1s infinite alternate;
+                    }  
             }
-           
-
         }
     }
 }
@@ -160,3 +167,12 @@ body{
                 font-size: 0.9em;
                 color: #aaa;
             }
+
+                         @keyframes flicker-shadow {
+                0%, 100% {
+                    box-shadow: 0 0 0px green;
+                }
+                100% {
+                    box-shadow: 20px 10px 50px green;
+                }
+}
